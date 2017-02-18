@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta content="text/html; charset=windows-1252" http-equiv="content-type">
+    <title>InterCity Travel</title>
+    <link href="webpage.css" rel = "stylesheet" type = "text/css" />   <!– CSS LINK –>
+
+    <script> //java script function for multiple action html form button
+
+    function OnButton1()
+    {
+        document.form1.action = "cusformDetailsScript.py";    // First target
+        document.form1.submit();        // Submit the page
+        document.form1.action = "cardDetails.html"; // second target
+        document.form1.target = "_blank"; // opens new window
+        document.form1.submit();
+        return true;
+    }
+    </script>
+
+  </head>
+
+  <body>
+
+    <header> <a href="homepage.html" target="_blank"><img src="http://939e41ae03370909bc43-7080cc68367e890d409340077e3767c2.r98.cf3.rackcdn.com/1485807919.png" alt="Generated image" title="Free Banner by Bannersketch.com" style="border: 0px" align="left" /></a></div>
+    <nav>
+      <ul>
+        <li><a class="active" href="homepage.html">Home</a></li>
+        <li><a href="customerSignUp_v_1.3.html" >Booking</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+      </nav>
+    </header>
+
+  <h2>Customer Booking Details</h2>
+  <br>
+  <p>Thank you for choosing InterCity Travel for your next trip! Please enter your details below, where you will then be taken to the secure online payment system</p>
+  <p> Once your payment has been approved you will recieve a confirmation email confirming your booking with an attached E-ticket ready for printing.</p>
+<div>
+  <form name="form1" action="cusFormDetailsScript.py" method="post">
+    <label for="title">Title</label>
+    <select id="title" name="title">
+      <option value="mr">Mr</option>
+      <option value="mrs">Mrs</option>
+      <option value="miss">Miss</option>
+      <option value="ms">Ms</option>
+    </select>
+    <label for="fname">Forename</label>
+    <input type="text" id="fname" name="fname" required="Please enter a forename">
+    <label for="sname">Surname</label>
+    <input type="text" id="sname" name="sname" required="Please enter a surname">
+    <label for="dob">Date Of Birth</label>
+    <input type="text" pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))" id="dob" name="dob" placeholder="year-month-day" required="">
+    <label for="mail">Email Address</label>
+    <input type="email" id="mail" placeholder="someone@somewhere.com" name="mail" required>
+    <label for="contact">Contact Number</label>
+    <input type="text" pattern="^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$ | ^((\(?0\d{4}\)?\s?\d{3}\s?\d{3})|(\(?0\d{3}\)?\s?\d{3}\s?\d{4})|(\(?0\d{2}\)?\s?\d{4}\s?\d{4}))(\s?\#(\d{4}|\d{3}))?$" id="contact" name="contact" required="Please enter a valid contact number">
+    <label for="pword">Password</label>
+    <input type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$" id="pword" name="pword" required="Please enter valid password">
+    <input type="submit" value="Proceed To Payment" onclick="return OnButton1();">
+  </form>
+  </div>
+</body>

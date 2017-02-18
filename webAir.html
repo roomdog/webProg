@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta content="text/html; charset=windows-1252" http-equiv="content-type">
+    <title>InterCity Travel</title>
+    <link href="webpage.css" rel = "stylesheet" type = "text/css" />   <!– CSS LINK –>
+
+    <script> //java script function for multiple action html form button
+
+    function OnButton1()
+    {
+        document.form1.action = "cusformDetailsScript.py";    // First target
+        document.form1.submit();        // Submit the page
+        document.form1.action = "cardDetails.html"; // second target
+        document.form1.target = "_blank"; // opens new window
+        document.form1.submit();
+        return true;
+    }
+    </script>
+
+  </head>
+
+  <body>
+
+    <header> <a href="homepage.html" target="_blank"><img src="http://939e41ae03370909bc43-7080cc68367e890d409340077e3767c2.r98.cf3.rackcdn.com/1485807919.png" alt="Generated image" title="Free Banner by Bannersketch.com" style="border: 0px" align="left" /></a></div>
+    <nav>
+      <ul>
+        <li><a class="active" href="homepage.html">Home</a></li>
+        <li><a href="customerSignUp_v_1.3.html" >Booking</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+      </nav>
+    </header>
