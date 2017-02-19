@@ -15,7 +15,7 @@ conn = mysql.connector.connect(user='root',
 if conn.is_connected():
   cursor = conn.cursor(buffered=True)
 
-sql = "SELECT Name FROM locationtable"
+sql = "SELECT Destination FROM bristol"
 cursor.execute(sql)
 conn.commit()
 locationResult = cursor.fetchall()
