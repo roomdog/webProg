@@ -77,6 +77,27 @@ elif departureLoc == 'Newcastle':
     conn.commit()
     destinationResult = cursor.fetchall()
 
+if departureLoc == 'Bristol':
+    sql = "SELECT departTime FROM bristol "
+    cursor.execute(sql)
+    conn.commit()
+    destinationTime = cursor.fetchall()
+elif departureLoc == 'London':
+    sql = "SELECT departTime FROM london"
+    cursor.execute(sql)
+    conn.commit()
+    destinationTime = cursor.fetchall()
+elif departureLoc == 'Glasgow':
+    sql = "SELECT departTime FROM glasgow"
+    cursor.execute(sql)
+    conn.commit()
+    destinationTime = cursor.fetchall()
+elif departureLoc == 'Newcastle':
+    sql = "SELECT departTime FROM newcastle"
+    cursor.execute(sql)
+    conn.commit()
+    destinationTime = cursor.fetchall()
+
 
 print ("<form name = booking2>")
 print ("<label for = dest>Destination</label>")
@@ -86,6 +107,14 @@ for row in destinationResult:
 	print ("<option value=", destinationToPrint, ">", destinationToPrint , "</option>")
 
 print ("</select>")
+print ("<label for = time>Departure Time</label>")
+print ("<select id = time name = time>")
+for row in destinationTime:
+    timeToPrint = row[0]
+    print ("<option value=", timeToPrint, ">", timeToPrint, "</option>")
+print ("</select>")
+
+
 print ("<label for = nop>Number of passengers</label>")
 print ("<select id =nop name =nop>")
 print ("<option value = 1>1</option>")
