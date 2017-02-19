@@ -1,43 +1,94 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
 /*Start of Global Settings*/
 
 body
     {font-family: Georgia, serif; font-size:0.9em;}
-
-
+	
+	
 header nav
-    {border: 1px solid transparent;  background-image: url("bannerimage.jpg"); background-size:auto; background-repeat: no-repeat; background-color: transparent ; margin: 0px; padding: 100px; font-size: 150%;}
-
+    { background-color: transparent ; font-size: 150%; }
+	
 ul {
               list-style-type: none;
-              margin: 0;
-              padding: 0;
               overflow: hidden;
-              background-color: black;
-
-
-
-
+              background-color:#4c4b4b;
+			  height:100%; width:100%; margin:0; padding:0;
+			  
+			  
+			  
     }
+
      ul li {
       float: left;
-
+	  
     }
 
      li a {
       display: block;
-      color: black;
+      color: white;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
 	  color: white;
-
+	  
     }
 
      li a:hover {
       background-color: red;
     }
-
-
+	
 /*Will change to img*/
 
 p100{
@@ -46,7 +97,7 @@ p100{
 		text-align: center;
 		padding: 15px
 	}
-
+	
 h1{
 	text-align: center;
       font-size: 100%;
@@ -55,64 +106,41 @@ h1{
 
 h2{
 	color: black;
+	
+	
+}
+	
+section
+{ margin:5px; padding:8px; color:black;  } 
 
+.background {
+	background-image: url("air2.jpg");background-size:100%; padding:15%; margin:0px; border: transparent;
 
 }
 
-section
-{border:1px solid; margin:5px; padding:8px; color:black;}
+.backgroundcontact{
+	background-image: url("web1.jpg");background-size:100%; padding:15%; margin:0px; border: transparent;
+}
 
+.train, .air, .taxi, .ferry, .bus {
+	border:3px solid; border-radius: 50%; padding:10px; height:70px; width:70px; background-color: lightgrey;
+		
+}
+
+
+		
 article
-{border:1px solid grey; margin:5px; padding:8px; background-color:white}
+{border:1px solid grey; margin:5px; padding:8px; background-color:white} 
 
 footer
-{border:1px solid; margin:5px; padding:8px; color:black;}
-
-input[type=text], input[type=password], input[type=date], input[type=email], select{
-  display:inline-block;
-  width: 100%;
-  padding: 10px 20px;
-  margin: 8px 0;
-  border: 3px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-
-div{
-  float: left;
-  border-radius: 5px;
-  width: 30%;
-  background-color: transparent;
-  padding: 20px;
-  border: 1px transparent;
-}
-
-.center{
-  margin: auto;
-  border-radius: 5px;
-  width: 30%;
-  background-color: #c2c2c2;
-  padding: 20px;
-  border: 1px #c2c2c2;
-
-}
-
-.div1 {
-width: 900px;
-height: 100px;
-padding: 10px;
-border: 1px solid grey;
-}
-
-img{
-display: block;
-margin: 0 auto;
-}
-
+{padding:1%; color:white; background-color: #4c4b4b}
 
 /*End of Global Settings*/
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*Start of Index Settings*/
+		
+		
+		
+		
